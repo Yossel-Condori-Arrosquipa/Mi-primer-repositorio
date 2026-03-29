@@ -32,12 +32,7 @@
             text-transform: uppercase;
             letter-spacing: 4px;
             text-align: center;
-            /* Neón intenso en el título */
-            text-shadow: 
-                0 0 5px #fff,
-                0 0 10px var(--neon-cyan),
-                0 0 20px var(--neon-cyan),
-                0 0 40px var(--neon-cyan);
+            text-shadow: 0 0 5px #fff, 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan);
         }
 
         .container {
@@ -56,26 +51,18 @@
             width: 260px;
             text-align: center;
             transition: all 0.4s ease;
-            /* Sombra de neón externa e interna */
-            box-shadow: 
-                0 0 10px var(--neon-cyan),
-                inset 0 0 10px var(--neon-cyan);
+            box-shadow: 0 0 10px var(--neon-cyan), inset 0 0 10px var(--neon-cyan);
         }
 
-        /* Efecto cuando pasas el mouse (Hover) */
         .card:hover {
             transform: translateY(-15px);
             border-color: var(--neon-purple);
-            box-shadow: 
-                0 0 20px var(--neon-purple),
-                0 0 40px var(--neon-purple),
-                inset 0 0 15px var(--neon-purple);
+            box-shadow: 0 0 20px var(--neon-purple), inset 0 0 15px var(--neon-purple);
         }
 
         .card h2 {
             font-family: 'Orbitron', sans-serif;
             font-size: 1.3rem;
-            margin-bottom: 15px;
             color: #fff;
         }
 
@@ -95,47 +82,27 @@
             font-family: 'Orbitron', sans-serif;
             color: var(--neon-purple);
             text-shadow: 0 0 10px var(--neon-purple);
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
         }
 
-        textarea {
-            width: 100%;
-            height: 120px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--neon-cyan);
-            color: white;
-            padding: 15px;
-            border-radius: 10px;
-            margin-top: 20px;
-            font-size: 1rem;
-            outline: none;
-            transition: 0.3s;
+        /* Estilo Neón para tu Misión y Visión final */
+        .mision-vision p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #fff;
+            margin-bottom: 25px;
+            text-shadow: 0 0 5px #fff, 0 0 10px var(--neon-purple);
         }
 
-        textarea:focus {
-            border-color: var(--neon-purple);
-            box-shadow: 0 0 10px var(--neon-purple);
-        }
-
-        button {
-            margin-top: 25px;
-            padding: 12px 40px;
-            background: transparent;
-            color: var(--neon-cyan);
-            border: 2px solid var(--neon-cyan);
-            border-radius: 50px;
-            cursor: pointer;
+        .label-neon {
+            display: block;
             font-family: 'Orbitron', sans-serif;
             font-weight: bold;
+            color: var(--neon-cyan);
+            text-shadow: 0 0 5px var(--neon-cyan);
+            margin-bottom: 10px;
             text-transform: uppercase;
-            transition: 0.3s;
-            box-shadow: 0 0 15px var(--neon-cyan);
-        }
-
-        button:hover {
-            background: var(--neon-cyan);
-            color: #000;
-            box-shadow: 0 0 40px var(--neon-cyan);
         }
     </style>
 </head>
@@ -154,16 +121,18 @@
         </div>
         <div class="card">
             <h2>Proyecto 3</h2>
-            <p>Trabajos y Desarrollos</p></p>
+            <p>Trabajos y Desarrollos</p>
         </div>
     </div>
 
     <div class="mision-vision">
         <h2>Misión - Visión</h2>
-        <p>Estudiante de Ingeniería en Estadística e Informática enfocado en programación y proyectos futuros.</p>
-        <textarea placeholder="Escribe tus metas aquí..."></textarea>
-        <br>
-        <button onclick="alert('¡Meta guardada con éxito!')">Guardar Meta</button>
+        
+        <span class="label-neon">Misión</span>
+        <p>Formarme como un profesional en Ingeniería Estadística e Informática con sólidos conocimientos en datos y programación aplicando la tecnología para resolver problemas y aportar en la toma de decisiones.</p>
+        
+        <span class="label-neon">Visión</span>
+        <p>Ser un profesional innovador y ético, destacado en análisis de datos y desarrollo tecnológico para así contribuir al progreso de la sociedad.</p>
     </div>
 
 </body>
